@@ -1,0 +1,18 @@
+using Default.Core.Domain;
+using Default.Core.Domain.Interfaces.UseCase;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Default.Core.Application.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class CourseController(IGetCourseUseCase getCourseUseCase) : ControllerBase
+    {
+
+        [HttpGet]
+        public IEnumerable<Course> Get()
+        {
+            return getCourseUseCase.Get();
+        }
+    }
+}
