@@ -10,7 +10,7 @@ namespace Default.Core.Application.Controllers
     {
 
         [HttpGet]
-        public IEnumerable<Course> Get()
+        public ActionResult<IEnumerable<Course>> Get()
         {
             return getCourseUseCase.Get();
         }
