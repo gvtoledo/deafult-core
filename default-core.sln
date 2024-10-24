@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35201.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Default.Core.Application", "Default.Core.Application\Default.Core.Application.csproj", "{EEB5935D-8B98-400C-9075-1B1497925267}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Default.Core.Application", "Default.Core.Application\Default.Core.Application.csproj", "{EEB5935D-8B98-400C-9075-1B1497925267}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Default.Core.UseCase", "Default.Core.UseCase\Default.Core.UseCase.csproj", "{C501A450-5AC5-424B-AC77-CCF914605AF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Default.Core.UseCase", "Default.Core.UseCase\Default.Core.UseCase.csproj", "{C501A450-5AC5-424B-AC77-CCF914605AF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Default.Core.Ioc", "Default.Core.Ioc\Default.Core.Ioc.csproj", "{DB4DFA4E-6FDC-4275-8A86-582A063213FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Default.Core.Ioc", "Default.Core.Ioc\Default.Core.Ioc.csproj", "{DB4DFA4E-6FDC-4275-8A86-582A063213FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Default.Core.Domain", "Default.Core.Domain\Default.Core.Domain.csproj", "{ACFB8A7B-17EB-4F63-9BAC-4855FEF663A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Default.Core.Domain", "Default.Core.Domain\Default.Core.Domain.csproj", "{ACFB8A7B-17EB-4F63-9BAC-4855FEF663A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Default.Core.Repository", "Default.Core.Repository\Default.Core.Repository.csproj", "{AF74A2A2-F4CF-49C8-ADEE-ED3E2508E5E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Default.Core.Repository", "Default.Core.Repository\Default.Core.Repository.csproj", "{AF74A2A2-F4CF-49C8-ADEE-ED3E2508E5E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{DD5F3258-9019-4CDC-9926-DEE26F8F45CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Default.Core.UseCase.Test", "Default.Core.UseCase.Test\Default.Core.UseCase.Test.csproj", "{813AC3AC-2B1C-49F7-AA56-2A0637EACA79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +43,16 @@ Global
 		{AF74A2A2-F4CF-49C8-ADEE-ED3E2508E5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF74A2A2-F4CF-49C8-ADEE-ED3E2508E5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF74A2A2-F4CF-49C8-ADEE-ED3E2508E5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{813AC3AC-2B1C-49F7-AA56-2A0637EACA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{813AC3AC-2B1C-49F7-AA56-2A0637EACA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{813AC3AC-2B1C-49F7-AA56-2A0637EACA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{813AC3AC-2B1C-49F7-AA56-2A0637EACA79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{813AC3AC-2B1C-49F7-AA56-2A0637EACA79} = {DD5F3258-9019-4CDC-9926-DEE26F8F45CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {604FCB89-E84F-44D6-A6AE-D9A8D2C398D2}
