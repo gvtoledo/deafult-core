@@ -47,7 +47,7 @@ namespace Default.Core.UseCase
             return studentRepository.Create(newstudent);
         }
 
-        public static bool ValidateCPF(string cpf)
+        private static bool ValidateCPF(string cpf)
         {
             // Remove pontos e traços do CPF
             cpf = cpf.Replace(".", "").Replace("-", "");
@@ -97,7 +97,7 @@ namespace Default.Core.UseCase
             return cpf.EndsWith(digito);
         }
 
-        public static int GetAge(DateTime birthDate)
+        private static int GetAge(DateTime birthDate)
         {
             DateTime today = DateTime.Today;
             int age = today.Year - birthDate.Year;
